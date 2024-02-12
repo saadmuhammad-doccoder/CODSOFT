@@ -7,6 +7,19 @@ const projectSection = document.querySelector("#work");
 const logo = document.querySelector(".logo h1");
 const arrow = document.querySelector(".arrow");
 const projects = document.querySelectorAll(".project");
+const hamMenuLinksOpenBtn = document.querySelector(".ham-menu");
+const hamMenuLinks = document.querySelector(".menu-links");
+const hamMenuLinksCloseBtn = document.querySelector(".menu-links img");
+
+hamMenuLinksOpenBtn.addEventListener("click", function (e) {
+  hamMenuLinks.classList.toggle("hidden");
+  hamMenuLinks.classList.toggle("display-ham-menu");
+});
+
+hamMenuLinksCloseBtn.addEventListener("click", function (e) {
+  hamMenuLinks.classList.toggle("hidden");
+  hamMenuLinks.classList.toggle("display-ham-menu");
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const navigationObserver = function () {
@@ -49,7 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
       e.target.tagName === "H1" ||
       e.target.closest(".project") ||
       e.target.closest(".container") ||
-      e.target.tagName === "P"
+      e.target.tagName === "P" ||
+      e.target.closest(".site-nav")
     ) {
       cursor.classList.add("grow");
       cursor.classList.add("blend");
