@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Franky's Restaurant</title>
+	<link rel="stylesheet" href="landingp.css">
+</head>
+
+<body>
+
+	<!-------------------------------------------NAVIGATION-BAR---------------------------------------------->
+
+	<div id="front" onscroll="scroll()">
+		<div class="img-title">
+			<img src="images.jpg" id="logo" alt="logo">
+			<h3>Franky's Restaurant</h3>
+		</div>
+		<div>
+			<ul>
+				<li><a class="navbar" href="#section1" onclick="ready()">Home</a></li>
+				<li><a class="navbar" href="#section2" onclick="ready()">Contact Us</a></li>
+				<li><a class="navbar" href="" onclick="ready()">Privacy Policy</a></li>
+				<li><a class="navbar" href="#section3" onclick="ready()">Our Services</a></li>
+				<li><a class="navbar" href="#section5" onclick="ready()">Testimonials</a></li>
+			</ul>
+		</div>
+		<img src="search.png" id="icon" alt="">
+	</div>
+
+	<!-------------------------------------------Call to top button----------------------------------------------->
+
+
+	<a href="#section1" class="btn" onclick="ready()">
+		<p>top</p>
+	</a>
+
+	<!-------------------------------------------MAIN----------------------------------------------->
+
+	<div class="main section" id="section1">
+		<div class="gallery">
+			<img id="pasta" src="pastaforhero.jpg" alt="">
+			<img id="burger" src="burgerforhero.avif" alt="">
+			<img id="pizza" src="pizzaforhero.jpg" alt="">
+		</div>
+		<div class="text">
+			<h1>Get the best meals here!</h1>
+			<h5>We are here to serve you the best meals here.</h5>
+		</div>
+	</div>
+
+	<!-------------------------------------------CONTACT-US---------------------------------------------->
+
+	<div class="contact-form section" id="section2">
+		<div class="form-text">
+			<h3>Want to know about Us?</h3>
+			<h6>You can do it now by filling the form.</h6>
+		</div>
+		<div class="container">
+
+			<h2>Contact Us</h2>
+			<form action="#" method="post">
+				<label for="name">First Name:</label>
+				<input type="text" id="name" name="name">
+
+				<label for="password">Last Name:</label>
+				<input type="text" id="password" name="password">
+
+				<label for="email">Email Address:</label>
+				<input type="text-area" id="cnic" name="cnic">
+				<label for="text-area">Write here:</label>
+				<textarea name="text-area" id="text-input" cols="30" rows="10"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+	<!-------------------------------------------SERVICES-SECTION---------------------------------------------->
+
+	<div class="services section" id="section3">
+		<div class="opacity">
+			<h3><span>O</span>ur <span>S</span>ervices!</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consectetur odit aspernatur vel ratione
+				nobis aliquam quo deserunt, culpa provident ducimus nihil ea architecto repellat unde qui quasi tempore
+				soluta!</p>
+			<button>Order Now</button>
+		</div>
+	</div>
+
+	<!-------------------------------------------TESTIMONIALS---------------------------------------------->
+
+	<div class="testimonials section" id="section4">
+		<div class="intro">
+			<img class="profile" src="Kamgar.jpeg" alt="">
+			<h3>Kamgar Hussain</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laborum provident officiis quasi voluptates.
+				Dicta cumque nemo facere ullam, voluptate debitis aliquid praesentium temporibus soluta ea, odio optio!
+				Quae, maiores!</p>
+		</div>
+	</div>
+	<!-------------------------------------------FOOTER---------------------------------------------->
+	<footer>
+		<ul>
+			<li><a class="navbar" href="#section1" onclick="ready()">Home</a></li>
+			<li><a class="navbar" href="#section2" onclick="ready()">Contact Us</a></li>
+			<li><a class="navbar" href="#section3" onclick="ready()">Privacy Policy</a></li>
+			<li><a class="navbar" href="#section3" onclick="ready()">Our Services</a></li>
+			<li><a class="navbar" href="#section4" onclick="ready()">Testimonials</a></li>
+		</ul>
+		<p>&copy; 2023 All Rights Reserved</p>
+	</footer>
+	<!-------------------------------------------SCRIPT---------------------------------------------->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
