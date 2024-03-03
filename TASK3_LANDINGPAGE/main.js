@@ -80,17 +80,6 @@ btnScrollTo.addEventListener("click", function (e) {
   section1.scrollIntoView({ behavior: "smooth" });
 });
 
-// Page navigation the old way without using Bubbling
-
-// document.querySelectorAll(".nav__link").forEach(function (el) {
-//   el.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const id = this.getAttribute("href");
-//     console.log(id);
-//     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-//   });
-// });
-
 // Page navigation the new way using event bubbling
 document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
